@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intelligent Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <div id="topError" class="top-error"></div>
+
+    <div id="successMessage" class="success-msg"></div>
+
+    <form id="registrationForm">
+
+        <label>First Name *</label>
+        <input type="text" id="firstName">
+        <small class="error"></small>
+
+        <label>Last Name *</label>
+        <input type="text" id="lastName">
+        <small class="error"></small>
+
+        <label>Email *</label>
+        <input type="email" id="email">
+        <small class="error"></small>
+
+        <label>Phone Number *</label>
+        <input type="text" id="phone">
+        <small class="error"></small>
+
+        <label>Age</label>
+        <input type="text" id="age" placeholder="Enter age">
+
+
+        <label>Gender *</label>
+        <div class="gender-group">
+        <label>
+                <input type="radio" name="gender" value="Male"> Male
+        </label>
+        <label>
+                <input type="radio" name="gender" value="Female"> Female
+        </label>
+        <label>
+                <input type="radio" name="gender" value="Other"> Other
+        </label>
+        </div>
+        <small class="error"></small>
+
+        <small class="error"></small>
+
+        <label>Address</label>
+        <textarea id="address"></textarea>
+
+        <select id="country">
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+        </select>
+
+        <label>State</label>
+        <select id="state">
+            <option value="">Select State</option>
+        </select>
+
+        <label>City</label>
+        <select id="city">
+            <option value="">Select City</option>
+        </select>
+
+        <label>Password *</label>
+        <input type="password" id="password">
+        <div id="strength"></div>
+        <small class="error"></small>
+
+        <label>Confirm Password *</label>
+        <input type="password" id="confirmPassword">
+        <small class="error"></small>
+
+        <div class="terms-box">
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to Terms & Conditions *</label>
+        </div>
+        <small class="error"></small>
+
+
+        <button type="submit" id="submitBtn" disabled>Register</button>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

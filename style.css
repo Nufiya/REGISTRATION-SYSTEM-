@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+.container {
+    width: 400px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 40px;
+}
+
+textarea {
+    height: 70px;
+    resize: none;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+}
+
+
+.gender {
+    margin-top: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.top-error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input.error-border, select.error-border, textarea.error-border {
+    border: 2px solid red;
+}
+
+#strength {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: not-allowed;
+}
+
+button.enabled {
+    cursor: pointer;
+    background: #28a745;
+}
+
+.gender-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.gender-group label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+}
+
+.terms-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.terms-box input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.terms-box label {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+}
